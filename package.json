@@ -1,0 +1,58 @@
+{
+	"name": "image2webp",
+	"displayName": "image2webp",
+	"description": "convert the images to type of webp",
+	"version": "1.0.0",
+	"publisher": "yylzhixian",
+	"private": true,
+	"license": "MIT",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yylzhixian/image2webp"
+	},
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:vue",
+		"onLanguage:css",
+		"onLanguage:less",
+		"onLanguage:scss",
+		"onLanguage:html",
+		"onLanguage:javascript",
+		"onLanguage:typescript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescriptreact"
+	],
+	"main": "./dist/extension",
+	"contributes": {},
+	"scripts": {
+		"package": "npm run build && vsce package",
+		"build": "webpack --mode production && npm run web",
+		"webpack": "webpack --mode development && npm run web",
+		"webpack-dev": "webpack --mode development --watch",
+		"lint": "eslint . --ext .ts,.tsx",
+		"web": "node buildWeb.js"
+	},
+	"devDependencies": {
+		"@types/download": "^8.0.1",
+		"@types/node": "^16.11.7",
+		"@types/vscode": "^1.32.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"eslint": "^8.13.0",
+		"ts-loader": "^9.4.0",
+		"typescript": "^4.8.3",
+		"webpack": "^5.74.0",
+		"webpack-cli": "^4.10.0"
+	},
+	"dependencies": {
+		"download": "^8.0.0",
+		"image-size": "^1.0.2"
+	}
+}
