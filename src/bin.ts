@@ -6,19 +6,20 @@ import * as download from 'download';
 import { BinName, BinPathObj } from "./types";
 import { exec, isExisting } from "./utils";
 
-const url = 'https://yylzhixian.github.io/vendors';
+const cwebpUrl = 'https://ghproxy.com/https://raw.githubusercontent.com/imagemin/cwebp-bin/main/vendor';
+const gif2webpUrl = 'https://ghproxy.com/https://raw.githubusercontent.com/imagemin/gif2webp-bin/main/vendor';
 
 export const binPaths: BinPathObj = {
     cwebp: {
-        'darwin': { name: 'cwebp', url: `${url}/cwebp/osx/cwebp` },
-        'linux/x86': { name: 'cwebp', url: `${url}/cwebp/linux/x86/cwebp` },
-        'linux/x64': { name: 'cwebp', url: `${url}/cwebp/linux/x64/cwebp` },
-        'win32/x64': { name: 'cwebp.exe', url: `${url}/cwebp/win/x64/cwebp.exe` },
+        'darwin': { name: 'cwebp', url: `${cwebpUrl}/osx/cwebp` },
+        'linux/x86': { name: 'cwebp', url: `${cwebpUrl}/linux/x86/cwebp` },
+        'linux/x64': { name: 'cwebp', url: `${cwebpUrl}/linux/x64/cwebp` },
+        'win32/x64': { name: 'cwebp.exe', url: `${cwebpUrl}/win/x64/cwebp.exe` },
     },
     gif2webp: {
-        'darwin': { name: 'gif2webp', url: `${url}/gif2webp/macos/gif2webp` },
-        'linux': { name: 'gif2webp', url: `${url}/gif2webp/linux/gif2webp` },
-        'win32': { name: 'gif2webp.exe', url: `${url}/gif2webp/win/gif2webp.exe` },
+        'darwin': { name: 'gif2webp', url: `${gif2webpUrl}/macos/gif2webp` },
+        'linux': { name: 'gif2webp', url: `${gif2webpUrl}/linux/gif2webp` },
+        'win32': { name: 'gif2webp.exe', url: `${gif2webpUrl}/win/gif2webp.exe` },
     },
 };
 

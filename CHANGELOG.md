@@ -1,5 +1,13 @@
 # Change Log
 
+## v1.0.2
+Bugs
+- Fixed cwebp dependency package download error
+
+## v1.0.1
+Bugs
+- Fixed dependency packages download error
+
 ## v1.0.0
 Features:
 - Support more file formats, eg. js, ts

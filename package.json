@@ -2,7 +2,7 @@
 	"name": "image2webp",
 	"displayName": "image2webp",
 	"description": "convert the images to type of webp",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"publisher": "yylzhixian",
 	"private": true,
 	"license": "MIT",

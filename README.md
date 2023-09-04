@@ -28,8 +28,8 @@
 2. Then move the cursor to the image path range
 3. Then click the left icon expansion option to convert the current image
 
-![image2webp](https://yylzhixian.github.io/image2webp.gif)
+![image2webp](https://ghproxy.com/https://raw.githubusercontent.com/yylzhixian/static/main/image2webp.gif)
 
-## Dependency
+## Dependencies
 - [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
 - [gif2webp](https://developers.google.com/speed/webp/docs/gif2webp)
